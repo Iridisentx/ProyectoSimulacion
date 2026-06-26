@@ -55,7 +55,8 @@
         "y": 120,
         "wires": [
             [
-                "n3-debug"
+                "n3-debug",
+                "n4-switch"
             ]
         ]
     },
@@ -75,5 +76,28 @@
         "x": 660,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "n4-switch",
+        "type": "switch",
+        "z": "tab1",
+        "name": "Temperatura > 30?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "30",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 160,
+        "wires": [
+            []
+        ]
     }
 ]

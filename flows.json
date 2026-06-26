@@ -54,7 +54,26 @@
         "x": 400,
         "y": 120,
         "wires": [
-            []
+            [
+                "n3-debug"
+            ]
         ]
+    },
+    {
+        "id": "n3-debug",
+        "type": "debug",
+        "z": "tab1",
+        "name": "Ver temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 80,
+        "wires": []
     }
 ]

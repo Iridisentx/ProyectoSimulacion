@@ -1,0 +1,12 @@
+{
+    "name": "Proyecto_Simulacion",
+    "description": "Simulacion del taller 12 de ingenieria de software I",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}

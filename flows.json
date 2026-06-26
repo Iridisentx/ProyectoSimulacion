@@ -34,6 +34,26 @@
         "x": 160,
         "y": 120,
         "wires": [
+            [
+                "n2-function"
+            ]
+        ]
+    },
+    {
+        "id": "n2-function",
+        "type": "function",
+        "z": "tab1",
+        "name": "Simular sensor temperatura",
+        "func": "// Genera una temperatura aleatoria entre 15 y 35 grados\nmsg.payload = +(Math.random() * (35 - 15) + 15).toFixed(1);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 120,
+        "wires": [
             []
         ]
     }

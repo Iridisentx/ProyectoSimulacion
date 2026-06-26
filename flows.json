@@ -1,1 +1,40 @@
-[]
+[
+    {
+        "id": "a01fc774c0ad6b9e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "tab1",
+        "type": "tab",
+        "label": "Sensor Temperatura Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "n1-inject",
+        "type": "inject",
+        "z": "tab1",
+        "name": "Disparo cada 5s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    }
+]

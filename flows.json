@@ -97,7 +97,53 @@
         "x": 660,
         "y": 160,
         "wires": [
-            []
+            [
+                "n5-change"
+            ]
+        ]
+    },
+    {
+        "id": "n6-debug-alerta",
+        "type": "debug",
+        "z": "tab1",
+        "name": "Alerta temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "n5-change",
+        "type": "change",
+        "z": "tab1",
+        "name": "Armar mensaje de alerta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"⚠️ Alerta: temperatura alta detectada: \" & payload & \" °C\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 160,
+        "wires": [
+            [
+                "n6-debug-alerta"
+            ]
         ]
     }
 ]
